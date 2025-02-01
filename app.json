@@ -4,25 +4,33 @@
     "slug": "minecraft-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/minecraft.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/minecraft.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
+    "navigation": {
+      "router": "expo-router"
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.rifan.alshahrani.minecraftapp"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/minecraft.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.rifan.alshahrani.minecraftapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-router"
+    ]
   }
 }
